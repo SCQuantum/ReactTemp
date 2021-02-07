@@ -1,0 +1,29 @@
+.button {
+    outline: none;
+    stroke: none;
+    border: none;
+    height: 35px;
+    width: 100px;
+    padding: 0px;
+}
+
+.button-clicked {
+    background-color: aqua;
+    transition: 1s;
+}
+
+.button-notClicked {
+    background-color: cornflowerblue;
+}
+
+.slider {
+    height: 100%;
+    width: 5px;
+    background-color: red;
+    margin-top: -16px;
+    padding: 0;
+}
+
+.slider-extended {
+    
+}
