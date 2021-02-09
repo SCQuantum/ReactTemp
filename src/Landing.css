@@ -2,15 +2,13 @@ html {
     height: 100%;
 }
 
-.container {}
-
 #sideBar {
     background-color: #0B0A0D;
     height: 100vh;
     width: 15vw;
     border-right: 3px solid #8C0F31;
     position: fixed;
-} 
+}
 
 .button-container {
     background-color: #0B0A0D;
