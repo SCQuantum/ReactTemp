@@ -2,21 +2,34 @@ import React, { useState } from 'react';
 import './ButtonStyle.css'
 
 function Button_Comp({}){
-    const [clicked, setClicked] = useState('button')
-    const [slider, setSlider] = useState('slider')
+    const [clickedStyle, setClickedStyle] = useState('button button-notClicked')
+    const [isOn, setIsOn] = useState(true)
+    const [slider, setSlider] = useState('slider slider-unExtended')
+    function ButtonHandler() {
+        setIsOn(prevCheck => !prevCheck);
+        if(isOn === true) {
+            setClickedStyle('button button-clicked')
+            // setSlider('slider slider-extended')
+        }
+        else if (isOn === false) {
+            setClickedStyle('button button-notClicked')
+            // setSlider('slider slider-unExtended')
+        }
+        else {
 
-    function ButtonClicked() {
-        setClicked('button button-clicked')
-        setSlider('slider slider-extended')
+        }
     }
+
     return(
         <div>
-            <button class={clicked}
-            onClick={() => ButtonClicked()}>Button
-            <div class={slider}>
-
+            <div>
+                <button class={clickedStyle}
+                onClick={() => ButtonHandler()}>
+                    
+                    <div class={slider}></div>
+                </button>
             </div>
-            </button>
+            
         </div>
     )
 }
