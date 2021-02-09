@@ -4,7 +4,7 @@
     padding: 0px;
     border: 2px solid #8C0F31;
     border-radius: 17.5px;
-    
+    color: #8C0F31;
     outline: none;
     background-color: #0B0A0D;
 }
@@ -12,11 +12,13 @@
 .button-notClicked:hover {
     border: 2px solid #D90D43;
     transition: 0.25s;
+    color: #D90D43;
 }
 
 .button-clicked {
     border: 2px solid #D90D43;
     transition: 0.5s;
+    color: #D90D43;
 }
 
 .button-notClicked {

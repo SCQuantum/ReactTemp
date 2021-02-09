@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ButtonStyle.css'
 
-function Button_Comp({}){
+function Button_Comp({children}){
     const [clickedStyle, setClickedStyle] = useState('button button-notClicked')
     const [isOn, setIsOn] = useState(true)
     const [slider, setSlider] = useState('slider slider-unExtended')
@@ -25,7 +25,7 @@ function Button_Comp({}){
             <div>
                 <button class={clickedStyle}
                 onClick={() => ButtonHandler()}>
-                    
+                    <span>{children}</span>
                     <div class={slider}></div>
                 </button>
             </div>
