@@ -7,11 +7,6 @@ function App() {
   return(
     <div>
       <Button/>
-
-      <Slider 
-        min="0"
-        max="255"
-      />
     </div>
   )
 }
