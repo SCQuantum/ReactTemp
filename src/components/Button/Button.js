@@ -9,10 +9,12 @@ function Button_Comp({children}){
         setIsOn(prevCheck => !prevCheck);
         if(isOn === true) {
             setClickedStyle('button button-clicked')
+            ButtonEffect = ('button-effect')
             // setSlider('slider slider-extended')
         }
         else if (isOn === false) {
             setClickedStyle('button button-notClicked')
+            var ButtonEffect = ('');
             // setSlider('slider slider-unExtended')
         }
         else {
@@ -21,12 +23,12 @@ function Button_Comp({children}){
     }
 
     return(
-        <div>
+        <div class='button-body'>
             <div>
                 <button class={clickedStyle}
                 onClick={() => ButtonHandler()}>
                     <span>{children}</span>
-                    <div class={slider}></div>
+                    <div class={clickedStyle}></div>
                 </button>
             </div>
             

@@ -9,6 +9,27 @@ function Landing(){
             <div className="button-container">
                 <Button>Test</Button>
             </div>
+            <div className="button-container">
+                <Button>Test</Button>
+            </div>
+            <div className="button-container">
+                <Button>Test</Button>
+            </div>
+            <div className="button-container">
+                <Button>Test</Button>
+            </div>
+            <div className="button-container">
+                <Button>Test</Button>
+            </div>
+            <div className="button-container">
+                <Button>Test</Button>
+            </div>
+            <div className="button-container">
+                <Button>Test</Button>
+            </div>
+            <div className="button-container">
+                <Button>Test</Button>
+            </div>
         </div>
     );
 }

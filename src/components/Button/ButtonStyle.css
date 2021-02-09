@@ -1,24 +1,51 @@
+.button-body {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
 .button {
+    transform: translateX(50%);
     height: 35px;
     width: 100px;
     padding: 0px;
     border: 2px solid #8C0F31;
     border-radius: 17.5px;
-    color: #8C0F31;
+    color: gray;
     outline: none;
     background-color: #0B0A0D;
+    position: relative;
 }
 
-.button-notClicked:hover {
+.button > div {
+    transform: translate3d(-20px, 25px, 0);
+    height: 0px;
+    width: 50px;
+    padding: 0px;
+    border: .25px solid transparent;
+    color: gray;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button:hover > div {
+    border: 0.25px solid #00ccff;
+    transition: 0.25s;
+}
+
+.button-notClicked:hover > button{
     border: 2px solid #D90D43;
     transition: 0.25s;
-    color: #D90D43;
+    color: whitesmoke;
 }
 
 .button-clicked {
-    border: 2px solid #D90D43;
+    border: 2px solid #ff0044;
     transition: 0.5s;
-    color: #D90D43;
+    color: white;
 }
 
 .button-notClicked {
