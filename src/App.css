@@ -1,5 +1,54 @@
-.body {
-    background-color: #0B0A0D;
-    width: 100%;
+#body-container {
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 6fr 4fr;
+}
+
+#designerTab {
+    width: 60%;
     height: 100%;
+    float: left;
+    background-color: red;
+    /* Temporary so I can see divs */
+}
+
+#previewTab {
+    width: 40%;
+    height: 100%;
+    float: right;
+    background-color: green;
+    /* Temporary so I can see divs */
+}
+
+#Identity {
+    background-color: white;
+    width: 95%;
+    height: 35px;
+    margin: auto;
+}
+
+.inputStyle {
+    border: 1px solid rgb(184, 182, 182);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#Contact {
+    background-color: white;
+    width: 95%;
+    height: 35px;
+    margin: auto;
+}
+
+#AboutMe {
+    background-color: white;
+    width: 95%;
+    height: 225px;
+    margin: auto;
+}
+
+#abp {
+    width: 80%;
+    height: 75px;
+    margin: auto;
 }
