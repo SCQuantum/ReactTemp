@@ -5,12 +5,40 @@ import Slider from './components/Slider/Slider'
 
 function App() {
   //useState Variables
-  let [firstName, setFirstName] = useState("");
+  let [firstName, setFirstName] = useState(""); //Naming
   let [lastName, setLastName] = useState("");
-  let [phoneNumber, setPhoneNumber] = useState("");
+  let [phoneNumber, setPhoneNumber] = useState(""); //Contact
   let [email, setEmail] = useState("");
-  let [gender, setGender] = useState("");
+  let [gender, setGender] = useState(""); //About Me
   let [aboutText, setAboutText] = useState("");
+  let [hs, setHS] = useState(""); //Education
+  let hsValueCheck;
+  let [ucol, setUCol] = useState("");
+  let ucolValueCheck;
+  let [gcol, setGCol] = useState("");
+  let gcolValueCheck;
+
+  if (hs === ""){
+    hsValueCheck = "";
+  }
+  else {
+    hsValueCheck = "High School:";
+  }
+
+  if (ucol === ""){
+    ucolValueCheck = "";
+  }
+  else {
+    ucolValueCheck = "Undergraduate College:";
+  }
+
+  if (gcol === ""){
+    gcolValueCheck = "";
+  }
+  else {
+    gcolValueCheck = "Graduate College:";
+  }
+
   return(
     <div id="body-container">
       <div id="designerTab">
@@ -48,6 +76,9 @@ function App() {
 
         <div id="Education">
           <form>
+            <input type="text" id="hs" className="inputStyle" name="hs" placeholder="Your High School" onChange={event => setHS(event.target.value)}></input>
+            <input type="text" id="ucol" className="inputStyle" name="ucol" placeholder="Your Undergraduate College" onChange={event => setUCol(event.target.value)}></input>
+            <input type="text" id="gcol" className="inputStyle" name="gcol" placeholder="Your Graduate College" onChange={event => setGCol(event.target.value)}></input>
           </form>
         </div>
 
@@ -77,6 +108,10 @@ function App() {
         <p>{/*Simon Birthday Algoritm*/}</p>
 
         <p>{aboutText}</p>
+
+        <p>{hsValueCheck} {hs}</p>
+        <p>{ucolValueCheck} {ucol}</p>
+        <p>{gcolValueCheck} {gcol}</p>
       </div>
     </div>
   )
